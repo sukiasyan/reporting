@@ -3,7 +3,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-const InputDataButton = () => {
+export const InputDataButton = () => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -20,4 +20,19 @@ const InputDataButton = () => {
   );
 };
 
-export default InputDataButton;
+export const LoginButton = () => {
+  const router = useRouter();
+
+  const handleLoginClick = () => {
+    router.push("/login");
+  };
+
+  return (
+    <button
+      className="bg-orange-500 hover:bg-orange-700 size-4/12 h-10 text-white rounded mx-2"
+      onClick={handleLoginClick}
+    >
+      Login
+    </button>
+  );
+};

@@ -1,18 +1,17 @@
-import Header from "@/app/header";
-import InputDataButton from "@/app/components/NavigationButtons";
+import {
+  InputDataButton,
+  LoginButton,
+} from "@/app/components/NavigationButtons";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <div className="flex flex-col py-24">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/4 py-4" />
 
           <div className="w-full md:w-1/2 text-center  justify-between border-solid border-2 border-sky-500 py-4">
-            <button className="bg-orange-500 hover:bg-orange-700 size-4/12 h-10 text-white rounded mx-2">
-              Login
-            </button>
+            <LoginButton />
             <button className="bg-orange-500 hover:bg-orange-700 size-4/12 h-10 text-white rounded mx-2">
               Create New User
             </button>
